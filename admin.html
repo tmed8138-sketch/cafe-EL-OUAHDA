@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Café ALOUAHDA</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <!-- Auth Section -->
+    <div id="auth-section" class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h1>Administration</h1>
+                <p>Café ALOUAHDA</p>
+            </div>
+
+            <!-- Login Form -->
+            <div id="login-form" class="auth-form">
+                <h2>Connexion</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="login-username">Nom d'utilisateur</label>
+                        <input type="text" id="login-username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Mot de passe</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Se connecter</button>
+                </form>
+                <p class="auth-switch">Pas de compte ? <a href="#" id="show-register">S'inscrire</a></p>
+            </div>
+
+            <!-- Register Form -->
+            <div id="register-form" class="auth-form hidden">
+                <h2>Inscription</h2>
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="register-username">Nom d'utilisateur</label>
+                        <input type="text" id="register-username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Mot de passe</label>
+                        <input type="password" id="register-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm-password">Confirmer le mot de passe</label>
+                        <input type="password" id="register-confirm-password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">S'inscrire</button>
+                </form>
+                <p class="auth-switch">Déjà un compte ? <a href="#" id="show-login">Se connecter</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Container -->
+    <div id="notification-container" class="notification-container"></div>
+
+    <!-- Admin Panel -->
+    <div id="admin-panel" class="admin-container hidden">
+        <header class="admin-header">
+            <div class="admin-nav">
+                <h1><i class="fas fa-coffee"></i> Café ALOUAHDA - Administration</h1>
+                <button id="logout-btn" class="btn btn-outline">Déconnexion</button>
+            </div>
+        </header>
+
+        <main class="admin-main">
+            <div class="dashboard">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <div class="stat-info">
+                            <h3 id="total-reservations">0</h3>
+                            <p>Total Réservations</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-clock"></i>
+                        <div class="stat-info">
+                            <h3 id="pending-reservations">0</h3>
+                            <p>En Attente</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="stat-info">
+                            <h3 id="confirmed-reservations">0</h3>
+                            <p>Confirmées</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-times-circle"></i>
+                        <div class="stat-info">
+                            <h3 id="cancelled-reservations">0</h3>
+                            <p>Annulées</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div class="stat-info">
+                            <h3 id="total-orders">0</h3>
+                            <p>Total Commandes</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-clock"></i>
+                        <div class="stat-info">
+                            <h3 id="pending-orders">0</h3>
+                            <p>Commandes En Attente</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reservations-section">
+                    <h2>Gestion des Réservations</h2>
+                    <div class="reservations-table-container">
+                        <table id="reservations-table" class="reservations-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nom</th>
+                                    <th>Email</th>
+                                    <th>Téléphone</th>
+                                    <th>Date</th>
+                                    <th>Heure</th>
+                                    <th>Personnes</th>
+                                    <th>Statut</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="reservations-body">
+                                <!-- Reservations will be populated here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="orders-section">
+                    <h2>Gestion des Commandes</h2>
+                    <div class="orders-table-container">
+                        <table id="orders-table" class="orders-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nom</th>
+                                    <th>Téléphone</th>
+                                    <th>Type</th>
+                                    <th>Heure</th>
+                                    <th>Articles</th>
+                                    <th>Statut</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="orders-body">
+                                <!-- Orders will be populated here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="admin.js"></script>
+</body>
+</html>

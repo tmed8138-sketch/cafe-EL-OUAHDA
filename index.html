@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café ALOUAHDA | L'Excellence à Azilal</title>
+    <meta name="description" content="Découvrez le Café ALOUAHDA à Azilal. Un lieu unique pour savourer le meilleur café et des pâtisseries artisanales dans une ambiance chaleureuse.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="main-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span>ALOUAHDA</span>
+            </a>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Accueil</a>
+                <a href="#about">Notre Histoire</a>
+                <div class="dropdown">
+                    <a href="#menu" class="dropdown-toggle">Notre Carte <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <div class="menu-category">
+                            <h4><i class="fas fa-coffee"></i> Cafés</h4>
+                            <div class="menu-items">
+                                <div class="menu-item">
+                                    <span>Espresso</span>
+                                    <span class="price">8.00 DH</span>
+                                </div>
+                                <div class="menu-item">
+                                    <span>Café Crème</span>
+                                    <span class="price">9.00 DH</span>
+                                </div>
+                                <div class="menu-item">
+                                    <span>Café Noir</span>
+                                    <span class="price">8.00 DH</span>
+                                </div>
+                                <div class="menu-item">
+                                    <span>Cappuccino</span>
+                                    <span class="price">8.00 DH</span>
+                                </div>
+                                <div class="menu-item">
+                                    <span>Latte</span>
+                                    <span class="price">9.00 DH</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-category">
+                            <h4><i class="fas fa-glass-whiskey"></i> Boissons</h4>
+                            <div class="menu-items">
+                                <div class="menu-item">
+                                    <span>Thé à la Menthe</span>
+                                    <span class="price">10.00 DH</span>
+                                </div>
+                                <div class="menu-item">
+                                    <span>Jus d'Orange Frais</span>
+                                    <span class="price">20 DH</span>
+                                </div>
+                                <div class="menu-item">
+                                    <span>Limonade Maison</span>
+                                    <span class="price">15 DH</span>
+                                </div>
+                                <div class="menu-item">
+                                    <span>Eau Minérale</span>
+                                    <span class="price">3.00 DH</span>
+                                </div>
+                                <div class="menu-item">
+                                    <span>Smoothie Fraise</span>
+                                    <span class="price">25 DH</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-category">
+                            <h4><i class="fas fa-utensils"></i> Déjeuners</h4>
+                            <div class="menu-items">
+                                <div class="menu-item">
+                                    <span>Tajine Poulet</span>
+                                    <span class="price">45 DH</span>
+                                </div>
+                                <div class="menu-item">
+                                    <span>Couscous Royal</span>
+                                    <span class="price">50 DH</span>
+                                </div>
+                                <div class="menu-item">
+                                    <span>Pastilla</span>
+                                    <span class="price">35 DH</span>
+                                </div>
+                                <div class="menu-item">
+                                    <span>Sandwich Club</span>
+                                    <span class="price">28 DH</span>
+                                </div>
+                                <div class="menu-item">
+                                    <span>Salade César</span>
+                                    <span class="price">32 DH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#reservation">Réservation</a>
+                <a href="#order" class="order-link">Commander</a>
+                <a href="#contact">Contact</a>
+                <a href="admin.html">Admin</a>
+            </div>
+            
+            <button class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-in">Café ALOUAHDA</h1>
+            <p class="fade-in">L'harmonie parfaite entre tradition et modernité au cœur d'Azilal.</p>
+            <div class="hero-btns fade-in">
+                <a href="#menu" class="btn btn-primary">Découvrir la Carte</a>
+                <a href="#contact" class="btn btn-outline">Nous Trouver</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text scroll-reveal">
+                    <span class="subtitle">Notre Histoire</span>
+                    <h2>Une Passion pour l'Authenticité</h2>
+                    <p>Fondé avec le désir de créer un espace de rassemblement unique à Azilal, le Café ALOUAHDA est bien plus qu'un simple café. C'est un lieu où chaque grain est sélectionné avec soin et chaque rencontre devient un moment privilégié.</p>
+                    <p>Que vous veniez pour un café matinal énergisant ou pour un moment de détente l'après-midi, nous vous accueillons dans un cadre chaleureux inspiré par nos montagnes environnantes.</p>
+                </div>
+                <div class="about-image scroll-reveal">
+                    <img src="assets/coffee.png" alt="Café de qualité" class="img-responsive floating">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Highlights -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="subtitle">Notre Carte</span>
+                <h2>Sélection Signature</h2>
+            </div>
+            
+            <div class="menu-grid">
+                <!-- Item 1 -->
+                <div class="menu-card scroll-reveal">
+                    <div class="menu-image">
+                        <img src="assets/coffee.png" alt="Espresso">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Cafés Spéciaux</h3>
+                        <p>Des blends exclusifs torréfiés pour une expérience aromatique intense.</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="menu-card scroll-reveal">
+                    <div class="menu-image">
+                        <img src="assets/pastry.png" alt="Pâtisseries">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Pâtisseries Fines</h3>
+                        <p>Un mariage de saveurs traditionnelles et de créations modernes.</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="menu-card scroll-reveal">
+                    <div class="menu-image">
+                        <img src="assets/hero.png" alt="Ambiance">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Petit Déjeuner</h3>
+                        <p>Commencez votre journée avec les saveurs authentiques d'Azilal.</p>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="menu-card scroll-reveal">
+                    <div class="menu-image">
+                        <img src="assets/coffee.png" alt="Thé">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Thé à la Menthe</h3>
+                        <p>Un thé traditionnel marocain servi avec du sucre et de la menthe fraîche.</p>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="menu-card scroll-reveal">
+                    <div class="menu-image">
+                        <img src="assets/pastry.png" alt="Jus">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Jus Frais</h3>
+                        <p>Des jus de fruits frais pressés à la demande, riches en vitamines.</p>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="menu-card scroll-reveal">
+                    <div class="menu-image">
+                        <img src="assets/hero.png" alt="Déjeuner">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Déjeuner Marocain</h3>
+                        <p>Un repas complet avec tajine, couscous et salades traditionnelles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="subtitle">Réservation</span>
+                <h2>Réservez Votre Table</h2>
+            </div>
+
+            <div class="reservation-form scroll-reveal">
+                <form id="reservationForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Nom Complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Heure</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Nombre de Personnes</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Sélectionnez</option>
+                                <option value="1">1 personne</option>
+                                <option value="2">2 personnes</option>
+                                <option value="3">3 personnes</option>
+                                <option value="4">4 personnes</option>
+                                <option value="5">5 personnes</option>
+                                <option value="6">6+ personnes</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message (optionnel)</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Toute demande spéciale..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Réserver Maintenant</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="subtitle">Commande</span>
+                <h2>Passez Votre Commande</h2>
+            </div>
+
+            <div class="reservation-form scroll-reveal">
+                <form id="orderForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="order-name">Nom Complet</label>
+                            <input type="text" id="order-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="order-phone">Téléphone</label>
+                            <input type="tel" id="order-phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="order-type">Type de Commande</label>
+                            <select id="order-type" name="orderType" required>
+                                <option value="">Sélectionnez</option>
+                                <option value="pickup">À Emporter</option>
+                                <option value="delivery">Livraison</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="order-time">Heure de Collecte/Livraison</label>
+                            <input type="time" id="order-time" name="time" required>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Articles Commandés</label>
+                        <div class="menu-selection">
+                            <div class="menu-category-select">
+                                <h4><i class="fas fa-coffee"></i> Cafés</h4>
+                                <div class="item-checkboxes">
+                                    <label><input type="checkbox" name="items" value="Espresso"> Espresso - 8.00 DH</label>
+                                    <label><input type="checkbox" name="items" value="Café Crème"> Café Crème - 9.00 DH</label>
+                                    <label><input type="checkbox" name="items" value="Café Noir"> Café Noir - 8.00 DH</label>
+                                    <label><input type="checkbox" name="items" value="Cappuccino"> Cappuccino - 8.00 DH</label>
+                                    <label><input type="checkbox" name="items" value="Latte"> Latte - 9.00 DH</label>
+                                </div>
+                            </div>
+                            <div class="menu-category-select">
+                                <h4><i class="fas fa-glass-whiskey"></i> Boissons</h4>
+                                <div class="item-checkboxes">
+                                    <label><input type="checkbox" name="items" value="Thé à la Menthe"> Thé à la Menthe - 10.00 DH</label>
+                                    <label><input type="checkbox" name="items" value="Jus d'Orange Frais"> Jus d'Orange Frais - 20 DH</label>
+                                    <label><input type="checkbox" name="items" value="Limonade Maison"> Limonade Maison - 15 DH</label>
+                                    <label><input type="checkbox" name="items" value="Eau Minérale"> Eau Minérale - 3.00 DH</label>
+                                    <label><input type="checkbox" name="items" value="Smoothie Fraise"> Smoothie Fraise - 25 DH</label>
+                                </div>
+                            </div>
+                            <div class="menu-category-select">
+                                <h4><i class="fas fa-utensils"></i> Déjeuners</h4>
+                                <div class="item-checkboxes">
+                                    <label><input type="checkbox" name="items" value="Tajine Poulet"> Tajine Poulet - 45 DH</label>
+                                    <label><input type="checkbox" name="items" value="Couscous Royal"> Couscous Royal - 50 DH</label>
+                                    <label><input type="checkbox" name="items" value="Pastilla"> Pastilla - 35 DH</label>
+                                    <label><input type="checkbox" name="items" value="Sandwich Club"> Sandwich Club - 28 DH</label>
+                                    <label><input type="checkbox" name="items" value="Salade César"> Salade César - 32 DH</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="order-address">Adresse de Livraison (si livraison)</label>
+                        <input type="text" id="order-address" name="address" placeholder="Adresse complète">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Commander Maintenant</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info scroll-reveal">
+                    <h2>Nous Contacter</h2>
+                    <div class="info-item">
+                        <i class="fas fa-location-dot"></i>
+                        <div>
+                            <h4>Localisation</h4>
+                            <p>Centre Ville, Azilal, Maroc</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+212 5XX XX XX XX</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horaires</h4>
+                            <p>Lundi - Dimanche: 06:00 - 23:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map scroll-reveal">
+                    <!-- Placeholder for Map -->
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Carte Interactive bientôt disponible</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">ALOUAHDA</div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <p class="copyright">&copy; 2026 Café ALOUAHDA. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop preload="auto">
+
+    <!-- Music Control Button -->
+    <div id="musicControl" class="music-control">
+        <button id="musicToggle" class="music-btn">
+            <i class="fas fa-music"></i>
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>
